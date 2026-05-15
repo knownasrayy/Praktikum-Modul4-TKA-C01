@@ -1,0 +1,8 @@
+filebeat.inputs:
+  - type: filestream
+    id: linked-verse-log
+    paths:
+      - /logs/linked-verse.log
+
+output.logstash:
+  hosts: ["logstash:5044"]

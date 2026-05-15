@@ -1,0 +1,12 @@
+{
+  "name": "linked-verse-app",
+  "version": "1.0.0",
+  "description": "Linked VERSE logging study case app for ELK Stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

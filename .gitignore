@@ -1,0 +1,13 @@
+# Logs
+logs/*.log
+*.log
+
+# Docker data
+es_data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node dependencies
+node_modules/
