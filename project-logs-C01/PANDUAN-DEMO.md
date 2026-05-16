@@ -197,6 +197,11 @@ Buka browser ke **http://localhost:3000/health** atau jalankan:
 curl http://localhost:3000/health
 ```
 
+Atau di PowerShell:
+```powershell
+curl.exe -s http://localhost:3000/health
+```
+
 **Hasil yang diharapkan:**
 ```json
 {"status":"ok","service":"linked-verse-api"}
@@ -250,7 +255,7 @@ curl -s "http://localhost:9200/_cat/indices?v"
 
 Atau di PowerShell:
 ```powershell
-(Invoke-WebRequest -Uri "http://localhost:9200/_cat/indices?v" -UseBasicParsing).Content
+curl.exe -s "http://localhost:9200/_cat/indices?v"
 ```
 
 **Hasil yang diharapkan:** 2 index muncul:
@@ -267,6 +272,12 @@ Atau di PowerShell:
 ```bash
 curl -s "http://localhost:9200/linked-verse-logs-*/_count"
 curl -s "http://localhost:9200/linked-verse-errors-*/_count"
+```
+
+Atau di PowerShell:
+```powershell
+curl.exe -s "http://localhost:9200/linked-verse-logs-*/_count"
+curl.exe -s "http://localhost:9200/linked-verse-errors-*/_count"
 ```
 
 ---
