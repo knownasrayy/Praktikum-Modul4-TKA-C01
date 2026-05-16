@@ -153,12 +153,6 @@ Berisi 4 panel visualisasi + 1 data view:
 
 #### Langkah 1 — Tunjukkan Struktur Folder
 
-```bash
-cd project-logs-C01
-ls -la
-```
-
-Atau di PowerShell:
 ```powershell
 cd project-logs-C01
 ls
@@ -199,11 +193,6 @@ Tunggu sampai Elasticsearch menunjukkan status `(healthy)`. Biasanya sekitar 1-2
 
 Buka browser ke **http://localhost:3000/health** atau jalankan:
 
-```bash
-curl http://localhost:3000/health
-```
-
-Atau di PowerShell:
 ```powershell
 curl.exe -s http://localhost:3000/health
 ```
@@ -233,12 +222,6 @@ bash scripts/generate-test-events.sh
 
 #### Langkah 6 — Tunjukkan File Log
 
-```bash
-cat logs/linked-verse.log | head -5
-wc -l logs/linked-verse.log
-```
-
-Atau di PowerShell:
 ```powershell
 Get-Content .\logs\linked-verse.log | Select-Object -First 5
 (Get-Content .\logs\linked-verse.log | Measure-Object -Line).Lines
@@ -255,11 +238,6 @@ Get-Content .\logs\linked-verse.log | Select-Object -First 5
 
 Tunggu ±15-30 detik agar pipeline memproses, lalu:
 
-```bash
-curl -s "http://localhost:9200/_cat/indices?v"
-```
-
-Atau di PowerShell:
 ```powershell
 curl.exe -s "http://localhost:9200/_cat/indices?v"
 ```
@@ -275,12 +253,6 @@ curl.exe -s "http://localhost:9200/_cat/indices?v"
 
 #### Langkah 8 — Hitung Jumlah Dokumen (Opsional)
 
-```bash
-curl -s "http://localhost:9200/linked-verse-logs-*/_count"
-curl -s "http://localhost:9200/linked-verse-errors-*/_count"
-```
-
-Atau di PowerShell:
 ```powershell
 curl.exe -s "http://localhost:9200/linked-verse-logs-*/_count"
 curl.exe -s "http://localhost:9200/linked-verse-errors-*/_count"
