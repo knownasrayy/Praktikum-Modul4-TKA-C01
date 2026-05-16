@@ -158,6 +158,12 @@ cd project-logs-C01
 ls -la
 ```
 
+Atau di PowerShell:
+```powershell
+cd project-logs-C01
+ls
+```
+
 **Narasi:**
 > "Ini adalah struktur folder proyek Linked VERSE Logs. Terdapat docker-compose.yml, folder filebeat, kibana, linked-verse (aplikasi), logstash, logs, dan scripts. Semua sesuai dengan ketentuan soal."
 
